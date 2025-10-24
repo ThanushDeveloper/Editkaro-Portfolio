@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>IndieVisual — Promotional Videos for Brands</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,11 +41,11 @@
         left: 0;
         right: 0;
         z-index: 20;
-        padding: 20px 48px;
+        padding: calc(20px + env(safe-area-inset-top, 0px)) 48px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: transparent;
+        background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0));
       }
 
       .logo {
@@ -94,6 +94,7 @@
       .hero {
         position: relative;
         min-height: 100vh;
+        min-height: 100svh;
         background-image: url('Assets/HomeBackgroundImage.avif');
         background-size: cover;
         background-position: center;
@@ -118,7 +119,7 @@
         max-width: 1280px;
         height: 100%;
         margin: 0 auto;
-        padding: 120px 48px 56px;
+        padding: calc(120px + env(safe-area-inset-top, 0px)) 48px 56px;
       }
 
       .hero-copy h1 {
@@ -227,6 +228,43 @@
 
       .divider .line { height: 1px; background: #e5e7eb; }
 
+      /* Video section */
+      .video-section {
+        background: #02060a;
+        padding: 64px 24px;
+      }
+
+      .video-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .video-heading {
+        color: #fff;
+        font-weight: 800;
+        font-size: clamp(24px, 4vw, 42px);
+        margin: 0 0 20px;
+        letter-spacing: -0.02em;
+      }
+
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
+        background: #000;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
       /* Responsive */
       @media (max-width: 1200px) {
         .hero-inner { grid-template-columns: 1fr 460px; }
@@ -234,14 +272,15 @@
 
       @media (max-width: 1024px) {
         .nav { display: none; }
-        .hero-inner { grid-template-columns: 1fr; padding: 100px 24px 40px; }
+        .hero-inner { grid-template-columns: 1fr; padding: calc(100px + env(safe-area-inset-top, 0px)) 24px 40px; }
         .quote-card { max-width: 520px; margin: 12px auto 0; }
       }
 
       @media (max-width: 640px) {
-        .header { padding: 14px 20px; }
+        .header { padding: calc(14px + env(safe-area-inset-top, 0px)) 20px 14px; }
         .hero-copy h1 { font-size: clamp(36px, 9vw, 56px); }
         .hero-copy .sub { font-size: 18px; }
+        .video-section { padding: 36px 16px; }
       }
     </style>
   </head>
@@ -255,7 +294,7 @@
       </div>
       <div class="header-right">
         <nav class="nav">
-          <a href="#">Our Work</a>
+          <a href="#showreel">Our Work</a>
           <a href="#">Our Clients</a>
           <a href="#">Services</a>
           <a href="#">Why Hire Us?</a>
@@ -321,5 +360,20 @@
         </section>
       </div>
     </main>
+
+    <section id="showreel" class="video-section" aria-label="Showreel video">
+      <div class="video-container">
+        <h2 class="video-heading">IndieVisual Showreel 2025</h2>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&modestbranding=1&playsinline=1"
+            title="IndieVisual Showreel 2025"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
