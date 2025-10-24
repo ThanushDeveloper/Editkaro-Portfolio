@@ -90,6 +90,78 @@
         box-shadow: 0 6px 20px rgba(20, 125, 115, 0.35);
       }
 
+      .menu-toggle {
+        display: none;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        background: transparent;
+        color: var(--text-on-dark);
+        cursor: pointer;
+      }
+
+      .menu-toggle svg, .close-btn svg {
+        width: 26px;
+        height: 26px;
+        display: block;
+      }
+
+      /* Mobile Menu Overlay */
+      .mobile-menu {
+        position: fixed;
+        inset: 0;
+        z-index: 40;
+        background: rgba(0, 0, 0, 0.92);
+        color: var(--text-on-dark);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 200ms ease;
+      }
+
+      .mobile-menu .inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 14px 20px 24px;
+      }
+
+      .mobile-menu .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .close-btn {
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background: transparent;
+        color: var(--text-on-dark);
+        cursor: pointer;
+      }
+
+      .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin: 20px 0;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      .mobile-nav a { color: var(--text-on-dark); }
+
+      .mobile-menu .cta-btn {
+        width: auto;
+        align-self: flex-start;
+        margin-top: 10px;
+      }
+
+      body.menu-open { overflow: hidden; }
+      body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; }
+
       /* Hero */
       .hero {
         position: relative;
@@ -234,6 +306,8 @@
 
       @media (max-width: 1024px) {
         .nav { display: none; }
+        .header-right .cta-btn { display: none; }
+        .menu-toggle { display: inline-flex; }
         .hero-inner { grid-template-columns: 1fr; padding: 100px 24px 40px; }
         .quote-card { max-width: 520px; margin: 12px auto 0; }
       }
@@ -261,8 +335,43 @@
           <a href="#">Why Hire Us?</a>
         </nav>
         <a class="cta-btn" href="#">Get a Quote</a>
+        <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.add('menu-open')">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <aside class="mobile-menu" aria-hidden="true">
+      <div class="inner">
+        <div class="top">
+          <div class="logo" aria-label="IndieVisual logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 4l6.5 16L16 8l5 12" stroke="#16a394" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>IndieVisual</span>
+          </div>
+          <button class="close-btn" aria-label="Close menu" onclick="document.body.classList.remove('menu-open')">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="mobile-nav">
+          <a href="#" onclick="document.body.classList.remove('menu-open')">Our Work</a>
+          <a href="#" onclick="document.body.classList.remove('menu-open')">Our Clients</a>
+          <a href="#" onclick="document.body.classList.remove('menu-open')">Services</a>
+          <a href="#" onclick="document.body.classList.remove('menu-open')">Locations</a>
+          <a href="#" onclick="document.body.classList.remove('menu-open')">Why Hire Us?</a>
+        </nav>
+        <a class="cta-btn" href="#" onclick="document.body.classList.remove('menu-open')">Get a Quote</a>
+      </div>
+    </aside>
 
     <main class="hero">
       <div class="hero-inner">
