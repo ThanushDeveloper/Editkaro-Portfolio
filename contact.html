@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Collaboration - EditKaro | Start Your Video Project Today</title>
+    <meta name="description" content="Ready to transform your brand story? Contact EditKaro for professional video editing services. Get consultation, request quotes, and start your creative collaboration today.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Feditkarop3261back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-primary-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M4 6h24v4H4V6zm0 8h24v4H4v-4zm0 8h24v4H4v-4z"/>
+                            <circle cx="26" cy="8" r="2" fill="#FFB800"/>
+                            <circle cx="26" cy="16" r="2" fill="#00A8FF"/>
+                            <circle cx="26" cy="24" r="2" fill="#00D084"/>
+                        </svg>
+                        <span class="text-xl font-bold text-gradient">EditKaro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a>
+                    <a href="portfolio.html" class="text-text-secondary hover:text-accent transition-smooth">Portfolio</a>
+                    <a href="services.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a>
+                    <a href="about.html" class="text-text-secondary hover:text-accent transition-smooth">About</a>
+                    <a href="blog.html" class="text-text-secondary hover:text-accent transition-smooth">Blog</a>
+                    <a href="contact.html" class="text-accent font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-accent">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-primary-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-accent">Home</a>
+                <a href="portfolio.html" class="block px-3 py-2 text-text-secondary hover:text-accent">Portfolio</a>
+                <a href="services.html" class="block px-3 py-2 text-text-secondary hover:text-accent">Services</a>
+                <a href="about.html" class="block px-3 py-2 text-text-secondary hover:text-accent">About</a>
+                <a href="blog.html" class="block px-3 py-2 text-text-secondary hover:text-accent">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 text-accent font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-background via-primary-900/50 to-background z-10"></div>
+            <img src="https://images.unsplash.com/photo-1710266211626-4794ad9d7cb7" 
+                 alt="Professional video production team collaborating in modern studio with multiple monitors and editing equipment" 
+                 class="w-full h-full object-cover opacity-20"
+                 onerror="this.src='https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <span class="text-gradient">Let's Create</span><br>
+                    <span class="text-white">Something Amazing</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-12 max-w-3xl mx-auto">
+                    Ready to transform your brand story? We're here to craft visual experiences that resonate with your audience and drive real results.
+                </p>
+
+                <!-- Quick Contact Options -->
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+                    <a href="#contact-form" class="btn-primary text-lg px-8 py-4 rounded-full">
+                        Start Your Project
+                        <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                    <a href="#schedule-call" class="btn-secondary text-lg px-8 py-4 rounded-full">
+                        Schedule a Call
+                    </a>
+                </div>
+
+                <!-- Contact Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
+                    <div class="text-center animate-slide-up">
+                        <div class="text-2xl md:text-3xl font-bold text-accent mb-2">24h</div>
+                        <div class="text-text-secondary text-sm">Response Time</div>
+                    </div>
+                    <div class="text-center animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="text-2xl md:text-3xl font-bold text-warning mb-2">500+</div>
+                        <div class="text-text-secondary text-sm">Happy Clients</div>
+                    </div>
+                    <div class="text-center animate-slide-up" style="animation-delay: 0.2s;">
+                        <div class="text-2xl md:text-3xl font-bold text-success mb-2">98%</div>
+                        <div class="text-text-secondary text-sm">Satisfaction Rate</div>
+                    </div>
+                    <div class="text-center animate-slide-up" style="animation-delay: 0.3s;">
+                        <div class="text-2xl md:text-3xl font-bold text-accent mb-2">5★</div>
+                        <div class="text-text-secondary text-sm">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="py-20 bg-primary-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-gradient">Get In Touch</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Choose your preferred way to connect with us. We're here to help bring your vision to life.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Email Contact -->
+                <div class="bg-surface rounded-2xl p-8 text-center hover:bg-secondary transition-all duration-300 shadow-cinematic hover:shadow-glow">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Email Us</h3>
+                    <p class="text-text-secondary mb-6">Send us your project details and we'll get back to you within 24 hours.</p>
+                    <a href="mailto:hello@editkaro.com" class="text-accent hover:text-accent-400 font-medium">hello@editkaro.com</a>
+                </div>
+
+                <!-- Phone Contact -->
+                <div class="bg-surface rounded-2xl p-8 text-center hover:bg-secondary transition-all duration-300 shadow-cinematic hover:shadow-glow">
+                    <div class="w-16 h-16 bg-warning/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Call Us</h3>
+                    <p class="text-text-secondary mb-6">Speak directly with our team for immediate assistance and consultation.</p>
+                    <a href="tel:+1-555-EDIT-PRO" class="text-warning hover:text-yellow-400 font-medium">+1 (555) EDIT-PRO</a>
+                </div>
+
+                <!-- Live Chat -->
+                <div class="bg-surface rounded-2xl p-8 text-center hover:bg-secondary transition-all duration-300 shadow-cinematic hover:shadow-glow">
+                    <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Live Chat</h3>
+                    <p class="text-text-secondary mb-6">Chat with us instantly during business hours for quick answers.</p>
+                    <button id="live-chat-btn" class="text-success hover:text-green-400 font-medium">Start Chat Now</button>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-white mb-6">Follow Our Journey</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="javascript:void(0)" class="w-12 h-12 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" class="w-12 h-12 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" class="w-12 h-12 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" class="w-12 h-12 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Form -->
+    <section id="contact-form" class="py-20 bg-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-gradient">Start Your Project</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Tell us about your vision and we'll craft a proposal tailored to your needs and goals.
+                </p>
+            </div>
+
+            <div class="bg-surface rounded-2xl p-8 md:p-12 shadow-cinematic">
+                <form id="project-form" class="space-y-8">
+                    <!-- Personal Information -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="firstName" class="block text-sm font-medium text-text-primary mb-2">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required class="input-field w-full" placeholder="John">
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-sm font-medium text-text-primary mb-2">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required class="input-field w-full" placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-text-primary mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="input-field w-full" placeholder="john@company.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-text-primary mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="input-field w-full" placeholder="+1 (555) 123-4567">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-text-primary mb-2">Company/Organization</label>
+                        <input type="text" id="company" name="company" class="input-field w-full" placeholder="Your Company Name">
+                    </div>
+
+                    <!-- Project Details -->
+                    <div class="border-t border-primary-600 pt-8">
+                        <h3 class="text-2xl font-bold text-white mb-6">Project Details</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="projectType" class="block text-sm font-medium text-text-primary mb-2">Project Type *</label>
+                                <select id="projectType" name="projectType" required class="input-field w-full">
+                                    <option value="">Select project type</option>
+                                    <option value="ecommerce">eCommerce Ads</option>
+                                    <option value="gaming">Gaming Content</option>
+                                    <option value="anime">Anime Style Videos</option>
+                                    <option value="documentary">Documentary/Brand Story</option>
+                                    <option value="social">Social Media Content</option>
+                                    <option value="corporate">Corporate Videos</option>
+                                    <option value="other">Other/Custom</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="budget" class="block text-sm font-medium text-text-primary mb-2">Budget Range</label>
+                                <select id="budget" name="budget" class="input-field w-full">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-30k">$15,000 - $30,000</option>
+                                    <option value="30k-50k">$30,000 - $50,000</option>
+                                    <option value="50k-plus">$50,000+</option>
+                                    <option value="discuss">Let's Discuss</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="timeline" class="block text-sm font-medium text-text-primary mb-2">Timeline *</label>
+                                <select id="timeline" name="timeline" required class="input-field w-full">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP (Rush Job)</option>
+                                    <option value="1-week">Within 1 Week</option>
+                                    <option value="2-weeks">Within 2 Weeks</option>
+                                    <option value="1-month">Within 1 Month</option>
+                                    <option value="flexible">Flexible Timeline</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="platform" class="block text-sm font-medium text-text-primary mb-2">Primary Platform</label>
+                                <select id="platform" name="platform" class="input-field w-full">
+                                    <option value="">Select platform</option>
+                                    <option value="youtube">YouTube</option>
+                                    <option value="instagram">Instagram</option>
+                                    <option value="tiktok">TikTok</option>
+                                    <option value="facebook">Facebook</option>
+                                    <option value="linkedin">LinkedIn</option>
+                                    <option value="website">Website</option>
+                                    <option value="multiple">Multiple Platforms</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="projectDescription" class="block text-sm font-medium text-text-primary mb-2">Project Description *</label>
+                            <textarea id="projectDescription" name="projectDescription" rows="5" required class="input-field w-full resize-none" placeholder="Tell us about your project vision, goals, target audience, and any specific requirements..."></textarea>
+                        </div>
+
+                        <!-- File Upload -->
+                        <div class="mb-6">
+                            <label for="fileUpload" class="block text-sm font-medium text-text-primary mb-2">Reference Materials</label>
+                            <div class="border-2 border-dashed border-primary-600 rounded-lg p-6 text-center hover:border-accent transition-colors">
+                                <input type="file" id="fileUpload" name="fileUpload" multiple accept=".jpg,.jpeg,.png,.pdf,.mp4,.mov,.avi" class="hidden">
+                                <label for="fileUpload" class="cursor-pointer">
+                                    <svg class="w-12 h-12 text-text-secondary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                                    </svg>
+                                    <p class="text-text-secondary mb-2">Drop files here or click to upload</p>
+                                    <p class="text-sm text-text-secondary">Support: Images, PDFs, Videos (Max 50MB each)</p>
+                                </label>
+                            </div>
+                            <div id="file-list" class="mt-4 space-y-2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Communication Preferences -->
+                    <div class="border-t border-primary-600 pt-8">
+                        <h3 class="text-2xl font-bold text-white mb-6">Communication Preferences</h3>
+                        
+                        <div class="mb-6">
+                            <label class="block text-sm font-medium text-text-primary mb-3">Preferred Contact Method</label>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="contactMethod" value="email" class="text-accent focus:ring-accent">
+                                    <span class="text-text-primary">Email</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="contactMethod" value="phone" class="text-accent focus:ring-accent">
+                                    <span class="text-text-primary">Phone Call</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="contactMethod" value="video" class="text-accent focus:ring-accent">
+                                    <span class="text-text-primary">Video Call</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" name="newsletter" value="yes" class="text-accent focus:ring-accent">
+                                <span class="text-text-primary">Subscribe to our newsletter for video marketing insights and project showcases</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center pt-6">
+                        <button type="submit" class="btn-primary text-lg px-12 py-4 rounded-full">
+                            Send Project Inquiry
+                            <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </button>
+                        <p class="text-sm text-text-secondary mt-4">
+                            We'll respond within 24 hours with a detailed proposal and next steps.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Consultation -->
+    <section id="schedule-call" class="py-20 bg-primary-900/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-gradient">Schedule a Consultation</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Book a free 30-minute consultation to discuss your project goals and explore how we can help bring your vision to life.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Consultation Benefits -->
+                <div class="space-y-8">
+                    <div class="bg-surface rounded-2xl p-8 shadow-cinematic">
+                        <h3 class="text-2xl font-bold text-white mb-6">What to Expect</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-2">Project Discovery</h4>
+                                    <p class="text-text-secondary">We'll dive deep into your goals, target audience, and creative vision to understand exactly what you need.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-warning/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-2">Creative Strategy</h4>
+                                    <p class="text-text-secondary">Get expert insights on video styles, platform optimization, and creative approaches that will maximize your impact.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-success/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-2">Custom Proposal</h4>
+                                    <p class="text-text-secondary">Receive a detailed proposal with timeline, pricing, and deliverables tailored specifically to your project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="bg-surface rounded-2xl p-8 shadow-cinematic">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1645817095143-01b4feb70470" 
+                                 alt="Professional headshot of Marcus Chen, Marketing Director at TechFlow Solutions" 
+                                 class="w-12 h-12 rounded-full object-cover mr-4"
+                                 onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div>
+                                <h4 class="text-lg font-semibold text-white">Marcus Chen</h4>
+                                <p class="text-text-secondary text-sm">Marketing Director, TechFlow</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-text-primary italic">
+                            "The consultation call was incredibly valuable. EditKaro understood our vision immediately and provided insights that shaped our entire campaign strategy. Best investment we made."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Booking Calendar -->
+                <div class="bg-surface rounded-2xl p-8 shadow-cinematic">
+                    <h3 class="text-2xl font-bold text-white mb-6">Book Your Call</h3>
+                    
+                    <!-- Calendar Widget Placeholder -->
+                    <div class="bg-secondary rounded-lg p-6 mb-6">
+                        <div class="text-center mb-6">
+                            <h4 class="text-lg font-semibold text-white mb-2">Available Time Slots</h4>
+                            <p class="text-text-secondary text-sm">Select your preferred date and time</p>
+                        </div>
+                        
+                        <!-- Mock Calendar -->
+                        <div class="grid grid-cols-7 gap-2 mb-6">
+                            <div class="text-center text-sm font-medium text-text-secondary py-2">Sun</div>
+                            <div class="text-center text-sm font-medium text-text-secondary py-2">Mon</div>
+                            <div class="text-center text-sm font-medium text-text-secondary py-2">Tue</div>
+                            <div class="text-center text-sm font-medium text-text-secondary py-2">Wed</div>
+                            <div class="text-center text-sm font-medium text-text-secondary py-2">Thu</div>
+                            <div class="text-center text-sm font-medium text-text-secondary py-2">Fri</div>
+                            <div class="text-center text-sm font-medium text-text-secondary py-2">Sat</div>
+                            
+                            <!-- Calendar Days -->
+                            <div class="text-center py-2 text-text-secondary">29</div>
+                            <div class="text-center py-2 text-text-secondary">30</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">1</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">2</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">3</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">4</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">5</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">6</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">7</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">8</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">9</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">10</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">11</div>
+                            <div class="text-center py-2 text-text-primary cursor-pointer hover:bg-accent/20 rounded">12</div>
+                        </div>
+                        
+                        <!-- Time Slots -->
+                        <div class="space-y-3">
+                            <h5 class="text-sm font-medium text-text-primary">Available Times (EST)</h5>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button class="py-2 px-4 bg-primary-700 hover:bg-accent text-text-primary rounded text-sm transition-colors">10:00 AM</button>
+                                <button class="py-2 px-4 bg-primary-700 hover:bg-accent text-text-primary rounded text-sm transition-colors">11:00 AM</button>
+                                <button class="py-2 px-4 bg-primary-700 hover:bg-accent text-text-primary rounded text-sm transition-colors">2:00 PM</button>
+                                <button class="py-2 px-4 bg-primary-700 hover:bg-accent text-text-primary rounded text-sm transition-colors">3:00 PM</button>
+                                <button class="py-2 px-4 bg-primary-700 hover:bg-accent text-text-primary rounded text-sm transition-colors">4:00 PM</button>
+                                <button class="py-2 px-4 bg-primary-700 hover:bg-accent text-text-primary rounded text-sm transition-colors">5:00 PM</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary w-full text-lg py-4">
+                        Confirm Consultation
+                        <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-gradient">Frequently Asked Questions</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Get quick answers to common questions about our process, pricing, and services.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-toggle w-full text-left flex items-center justify-between" data-target="faq-1">
+                        <h3 class="text-xl font-semibold text-white">What's your typical turnaround time?</h3>
+                        <svg class="w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-1" class="faq-content hidden mt-4 text-text-secondary">
+                        <p>Our standard turnaround time is 5-7 business days for most projects. However, this can vary based on project complexity and scope. Rush jobs (24-48 hours) are available for an additional fee. During our consultation, we'll provide you with a detailed timeline specific to your project requirements.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-toggle w-full text-left flex items-center justify-between" data-target="faq-2">
+                        <h3 class="text-xl font-semibold text-white">How do you handle revisions?</h3>
+                        <svg class="w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-2" class="faq-content hidden mt-4 text-text-secondary">
+                        <p>All our packages include 2-3 rounds of revisions depending on the project scope. We provide a detailed revision process where you can submit feedback through our client portal with timestamps and specific notes. Additional revisions beyond the included amount are available at our standard hourly rate.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-toggle w-full text-left flex items-center justify-between" data-target="faq-3">
+                        <h3 class="text-xl font-semibold text-white">What file formats do you deliver?</h3>
+                        <svg class="w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-3" class="faq-content hidden mt-4 text-text-secondary">
+                        <p>We deliver videos in multiple formats optimized for your intended platforms. Standard deliverables include MP4 (H.264), MOV, and platform-specific formats for YouTube, Instagram, TikTok, etc. We also provide different resolutions (4K, 1080p, 720p) and aspect ratios (16:9, 9:16, 1:1) as needed for your distribution strategy.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-toggle w-full text-left flex items-center justify-between" data-target="faq-4">
+                        <h3 class="text-xl font-semibold text-white">Do you provide raw footage and project files?</h3>
+                        <svg class="w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-4" class="faq-content hidden mt-4 text-text-secondary">
+                        <p>Project files and raw footage can be provided for an additional fee. This includes the original editing project files (Premiere Pro, After Effects, etc.) and any raw footage or assets used in the project. This is particularly useful for clients who want to make future edits or need the source files for archival purposes.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-toggle w-full text-left flex items-center justify-between" data-target="faq-5">
+                        <h3 class="text-xl font-semibold text-white">What's included in your pricing?</h3>
+                        <svg class="w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-5" class="faq-content hidden mt-4 text-text-secondary">
+                        <p>Our pricing includes video editing, color correction, audio enhancement, motion graphics, and basic visual effects. We also include consultation time, project management, and the specified number of revision rounds. Additional services like custom animations, advanced VFX, or rush delivery are quoted separately based on requirements.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-toggle w-full text-left flex items-center justify-between" data-target="faq-6">
+                        <h3 class="text-xl font-semibold text-white">How do you ensure video quality and brand consistency?</h3>
+                        <svg class="w-6 h-6 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="faq-6" class="faq-content hidden mt-4 text-text-secondary">
+                        <p>We start every project with a detailed brand guidelines review and style consultation. Our team creates custom color palettes, typography treatments, and motion graphics templates that align with your brand identity. We also maintain strict quality control processes and deliver preview versions for approval before final rendering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 border-t border-primary-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M4 6h24v4H4V6zm0 8h24v4H4v-4zm0 8h24v4H4v-4z"/>
+                            <circle cx="26" cy="8" r="2" fill="#FFB800"/>
+                            <circle cx="26" cy="16" r="2" fill="#00A8FF"/>
+                            <circle cx="26" cy="24" r="2" fill="#00D084"/>
+                        </svg>
+                        <span class="text-2xl font-bold text-gradient">EditKaro</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Transforming brands through the art of visual storytelling. We craft video experiences 
+                        that don't just capture attention—they create lasting connections.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="portfolio.html" class="text-text-secondary hover:text-accent transition-colors">Portfolio</a></li>
+                        <li><a href="services.html" class="text-text-secondary hover:text-accent transition-colors">Services</a></li>
+                        <li><a href="about.html" class="text-text-secondary hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="blog.html" class="text-text-secondary hover:text-accent transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-text-secondary hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-6">Services</h3>
+                    <ul class="space-y-4">
+                        <li><a href="services.html#ecommerce" class="text-text-secondary hover:text-accent transition-colors">eCommerce Ads</a></li>
+                        <li><a href="services.html#gaming" class="text-text-secondary hover:text-accent transition-colors">Gaming Content</a></li>
+                        <li><a href="services.html#anime" class="text-text-secondary hover:text-accent transition-colors">Anime Style</a></li>
+                        <li><a href="services.html#documentary" class="text-text-secondary hover:text-accent transition-colors">Documentary</a></li>
+                        <li><a href="services.html#social" class="text-text-secondary hover:text-accent transition-colors">Social Media</a></li>
+                        <li><a href="services.html#corporate" class="text-text-secondary hover:text-accent transition-colors">Corporate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-primary-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">
+                    © 2025 EditKaro. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-colors">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div id="chat-widget" class="fixed bottom-6 right-6 z-50">
+        <button id="chat-toggle" class="w-16 h-16 bg-accent hover:bg-accent-600 rounded-full flex items-center justify-center shadow-cinematic transition-all duration-300 hover:scale-110">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+        </button>
+        
+        <!-- Chat Window -->
+        <div id="chat-window" class="hidden absolute bottom-20 right-0 w-80 h-96 bg-surface rounded-2xl shadow-cinematic border border-primary-600">
+            <div class="flex items-center justify-between p-4 border-b border-primary-600">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-medium">EditKaro Support</h4>
+                        <p class="text-xs text-success">Online now</p>
+                    </div>
+                </div>
+                <button id="chat-close" class="text-text-secondary hover:text-white">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-4 h-64 overflow-y-auto">
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-2">
+                        <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="bg-primary-700 rounded-lg p-3 max-w-xs">
+                            <p class="text-sm text-text-primary">Hi! I'm here to help with any questions about our video editing services. How can I assist you today?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 border-t border-primary-600">
+                <div class="flex space-x-2">
+                    <input type="text" placeholder="Type your message..." class="flex-1 input-field text-sm py-2">
+                    <button class="btn-primary px-4 py-2 text-sm">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const targetId = toggle.getAttribute('data-target');
+                const content = document.getElementById(targetId);
+                const icon = toggle.querySelector('svg');
+                
+                // Close all other FAQs
+                faqToggles.forEach(otherToggle => {
+                    if (otherToggle !== toggle) {
+                        const otherTargetId = otherToggle.getAttribute('data-target');
+                        const otherContent = document.getElementById(otherTargetId);
+                        const otherIcon = otherToggle.querySelector('svg');
+                        
+                        otherContent.classList.add('hidden');
+                        otherIcon.classList.remove('rotate-180');
+                    }
+                });
+                
+                // Toggle current FAQ
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // File Upload Handler
+        const fileUpload = document.getElementById('fileUpload');
+        const fileList = document.getElementById('file-list');
+        
+        fileUpload.addEventListener('change', (e) => {
+            const files = Array.from(e.target.files);
+            fileList.innerHTML = '';
+            
+            files.forEach((file, index) => {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'flex items-center justify-between bg-primary-700 rounded-lg p-3';
+                fileItem.innerHTML = `
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <div>
+                            <p class="text-sm text-text-primary font-medium">${file.name}</p>
+                            <p class="text-xs text-text-secondary">${(file.size / 1024 / 1024).toFixed(2)} MB</p>
+                        </div>
+                    </div>
+                    <button type="button" class="text-error hover:text-red-400" onclick="removeFile(${index})">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                `;
+                fileList.appendChild(fileItem);
+            });
+        });
+
+        function removeFile(index) {
+            const dt = new DataTransfer();
+            const files = Array.from(fileUpload.files);
+            
+            files.forEach((file, i) => {
+                if (i !== index) {
+                    dt.items.add(file);
+                }
+            });
+            
+            fileUpload.files = dt.files;
+            fileUpload.dispatchEvent(new Event('change'));
+        }
+
+        // Form Submission
+        const projectForm = document.getElementById('project-form');
+        
+        projectForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show success message
+            const submitBtn = projectForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Sending...
+            `;
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = `
+                    <svg class="inline-block mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Message Sent!
+                `;
+                submitBtn.classList.remove('btn-primary');
+                submitBtn.classList.add('bg-success', 'hover:bg-green-600');
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.classList.add('btn-primary');
+                    submitBtn.classList.remove('bg-success', 'hover:bg-green-600');
+                    projectForm.reset();
+                    fileList.innerHTML = '';
+                }, 3000);
+            }, 2000);
+        });
+
+        // Live Chat Widget
+        const chatToggle = document.getElementById('chat-toggle');
+        const chatWindow = document.getElementById('chat-window');
+        const chatClose = document.getElementById('chat-close');
+        const liveChatBtn = document.getElementById('live-chat-btn');
+
+        chatToggle.addEventListener('click', () => {
+            chatWindow.classList.toggle('hidden');
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatWindow.classList.add('hidden');
+        });
+
+        liveChatBtn.addEventListener('click', () => {
+            chatWindow.classList.remove('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-background/95');
+                nav.classList.remove('bg-background/90');
+            } else {
+                nav.classList.add('bg-background/90');
+                nav.classList.remove('bg-background/95');
+            }
+        });
+
+        // Calendar interaction
+        const calendarDays = document.querySelectorAll('.grid-cols-7 > div:not(:nth-child(-n+7))');
+        const timeSlots = document.querySelectorAll('.grid-cols-2 button');
+        
+        calendarDays.forEach(day => {
+            day.addEventListener('click', () => {
+                calendarDays.forEach(d => d.classList.remove('bg-accent', 'text-white'));
+                day.classList.add('bg-accent', 'text-white');
+            });
+        });
+        
+        timeSlots.forEach(slot => {
+            slot.addEventListener('click', () => {
+                timeSlots.forEach(s => s.classList.remove('bg-accent'));
+                slot.classList.add('bg-accent');
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

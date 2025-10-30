@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EditKaro | Video Editing Insights & Industry Trends</title>
+    <meta name="description" content="Discover video editing insights, industry trends, and creative tutorials from EditKaro's expert team. Stay ahead with platform-specific tips and behind-the-scenes content.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Feditkarop3261back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-primary-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M4 6h24v4H4V6zm0 8h24v4H4v-4zm0 8h24v4H4v-4z"/>
+                            <circle cx="26" cy="8" r="2" fill="#FFB800"/>
+                            <circle cx="26" cy="16" r="2" fill="#00A8FF"/>
+                            <circle cx="26" cy="24" r="2" fill="#00D084"/>
+                        </svg>
+                        <span class="text-xl font-bold text-gradient">EditKaro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-accent transition-smooth">Home</a>
+                    <a href="portfolio.html" class="text-text-secondary hover:text-accent transition-smooth">Portfolio</a>
+                    <a href="services.html" class="text-text-secondary hover:text-accent transition-smooth">Services</a>
+                    <a href="about.html" class="text-text-secondary hover:text-accent transition-smooth">About</a>
+                    <a href="blog.html" class="text-accent font-medium">Blog</a>
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-text-primary hover:text-accent">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-primary-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-accent">Home</a>
+                <a href="portfolio.html" class="block px-3 py-2 text-text-secondary hover:text-accent">Portfolio</a>
+                <a href="services.html" class="block px-3 py-2 text-text-secondary hover:text-accent">Services</a>
+                <a href="about.html" class="block px-3 py-2 text-text-secondary hover:text-accent">About</a>
+                <a href="blog.html" class="block px-3 py-2 text-accent font-medium">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 text-accent font-medium">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-background via-primary-900/30 to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    <span class="text-gradient">Creative Insights</span><br>
+                    <span class="text-white">& Industry Trends</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Discover the latest video editing techniques, platform optimization strategies, and creative storytelling insights from our expert team.
+                </p>
+
+                <!-- Search Bar -->
+                <div class="max-w-2xl mx-auto mb-8">
+                    <div class="relative">
+                        <input type="text" 
+                               id="blog-search"
+                               placeholder="Search articles, tutorials, tips..." 
+                               class="w-full input-field pl-12 pr-4 py-4 text-lg rounded-full">
+                        <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="max-w-md mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" 
+                               placeholder="Enter your email for updates" 
+                               class="flex-1 input-field">
+                        <button class="btn-primary whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="text-sm text-text-secondary mt-2">
+                        Get weekly insights on video marketing trends and exclusive tutorials.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="py-8 bg-primary-900/30 sticky top-16 z-40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="category-filter active bg-accent text-white px-6 py-2 rounded-full font-medium transition-all duration-300" data-category="all">
+                    All Posts
+                </button>
+                <button class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-6 py-2 rounded-full font-medium transition-all duration-300" data-category="tutorials">
+                    Tutorials
+                </button>
+                <button class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-6 py-2 rounded-full font-medium transition-all duration-300" data-category="industry">
+                    Industry News
+                </button>
+                <button class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-6 py-2 rounded-full font-medium transition-all duration-300" data-category="case-studies">
+                    Case Studies
+                </button>
+                <button class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-6 py-2 rounded-full font-medium transition-all duration-300" data-category="tips">
+                    Tips & Tricks
+                </button>
+                <button class="category-filter bg-surface text-text-secondary hover:bg-accent hover:text-white px-6 py-2 rounded-full font-medium transition-all duration-300" data-category="testimonials">
+                    Client Stories
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-2">
+                    <span class="text-gradient">Featured Article</span>
+                </h2>
+                <p class="text-text-secondary text-center">Our latest deep-dive into video marketing excellence</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Featured Image -->
+                <div class="relative group">
+                    <div class="aspect-video rounded-2xl overflow-hidden shadow-cinematic">
+                        <img src="https://images.unsplash.com/photo-1682506457467-2342b2d86870" 
+                             alt="Professional video editing workspace showing multiple monitors with timeline interface, color grading panels, and social media optimization tools" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Content -->
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <span class="bg-warning/20 text-warning px-3 py-1 rounded-full text-sm font-medium">Industry Insights</span>
+                        <span class="text-text-secondary text-sm">October 28, 2025</span>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">
+                        The Algorithm Revolution: How Platform Changes Are Reshaping Video Content Strategy in 2025
+                    </h3>
+                    <p class="text-lg text-text-secondary leading-relaxed">
+                        Discover how recent algorithm updates across TikTok, Instagram, and YouTube are changing the game for content creators. We break down the key metrics that matter now and share actionable strategies that have helped our clients achieve 300%+ engagement growth.
+                    </p>
+                    
+                    <!-- Article Stats -->
+                    <div class="flex items-center space-x-6 py-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                            <span class="text-text-secondary text-sm">2.4K views</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-text-secondary text-sm">8 min read</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 110 2h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 110-2h4z"></path>
+                            </svg>
+                            <span class="text-text-secondary text-sm">42 shares</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-primary">Read Full Article</button>
+                        <div class="flex space-x-3">
+                            <button class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </button>
+                            <button class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </button>
+                            <button class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18.77 7.46H5.23l6.77 5.84 6.77-5.84z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Grid -->
+    <section class="py-20 bg-primary-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-center mb-2">
+                    <span class="text-gradient">Latest Articles</span>
+                </h2>
+                <p class="text-text-secondary text-center">Stay updated with our latest insights and tutorials</p>
+            </div>
+
+            <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tutorial Article -->
+                <article class="blog-post bg-surface rounded-2xl overflow-hidden shadow-cinematic hover:shadow-glow transition-all duration-300 group" data-category="tutorials">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1609619385002-f40f1df9b7eb" 
+                             alt="Step-by-step video editing tutorial showing color grading techniques with before and after comparison on professional editing software" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Tutorial</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="w-12 h-12 bg-accent/90 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-text-secondary text-sm">October 25, 2025</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-text-secondary text-sm">12 min</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">
+                            Master Color Grading: From Flat to Cinematic in 5 Steps
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">
+                            Learn professional color grading techniques that transform ordinary footage into cinematic masterpieces. Includes downloadable LUTs and practice files.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">1.2K</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">89</span>
+                                </div>
+                            </div>
+                            <button class="text-accent hover:text-accent-400 font-medium">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Industry News Article -->
+                <article class="blog-post bg-surface rounded-2xl overflow-hidden shadow-cinematic hover:shadow-glow transition-all duration-300 group" data-category="industry">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600009710631-5baaaaf50754" 
+                             alt="Modern smartphone displaying various social media platforms with video content, representing the latest industry trends and platform updates" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-warning text-black px-3 py-1 rounded-full text-sm font-medium">Industry News</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-text-secondary text-sm">October 23, 2025</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-text-secondary text-sm">6 min</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-warning transition-colors">
+                            TikTok's New Creator Fund: What Video Editors Need to Know
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">
+                            Breaking down TikTok's latest monetization updates and how they impact content creation strategies. Plus, optimization tips for maximum reach.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">856</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">64</span>
+                                </div>
+                            </div>
+                            <button class="text-warning hover:text-yellow-400 font-medium">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study Article -->
+                <article class="blog-post bg-surface rounded-2xl overflow-hidden shadow-cinematic hover:shadow-glow transition-all duration-300 group" data-category="case-studies">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1733877687392-7aa39d980a7f" 
+                             alt="Business analytics dashboard showing video performance metrics, engagement rates, and conversion data for a successful marketing campaign" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success text-white px-3 py-1 rounded-full text-sm font-medium">Case Study</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-text-secondary text-sm">October 20, 2025</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-text-secondary text-sm">10 min</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-success transition-colors">
+                            How We Increased Client ROI by 450% with Strategic Video Editing
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">
+                            Deep dive into our collaboration with FitnessPro, revealing the editing techniques and platform strategies that quadrupled their conversion rates.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">2.1K</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">156</span>
+                                </div>
+                            </div>
+                            <button class="text-success hover:text-green-400 font-medium">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tips Article -->
+                <article class="blog-post bg-surface rounded-2xl overflow-hidden shadow-cinematic hover:shadow-glow transition-all duration-300 group" data-category="tips">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1619684030307-eac3e461d425" 
+                             alt="Gaming setup with multiple monitors showing video editing software, gaming footage, and optimization tools for content creation" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-error text-white px-3 py-1 rounded-full text-sm font-medium">Tips & Tricks</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-text-secondary text-sm">October 18, 2025</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-text-secondary text-sm">5 min</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-error transition-colors">
+                            10 Gaming Video Editing Shortcuts That Save Hours
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">
+                            Discover time-saving techniques and keyboard shortcuts that professional gaming editors use to streamline their workflow and boost productivity.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">945</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">73</span>
+                                </div>
+                            </div>
+                            <button class="text-error hover:text-red-400 font-medium">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Client Testimonial Article -->
+                <article class="blog-post bg-surface rounded-2xl overflow-hidden shadow-cinematic hover:shadow-glow transition-all duration-300 group" data-category="testimonials">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1543242594-597f36d719be" 
+                             alt="Professional headshot of satisfied client Marcus Chen in modern office setting, representing successful video marketing collaboration" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-400 text-white px-3 py-1 rounded-full text-sm font-medium">Client Story</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="flex text-warning">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <span class="text-white text-sm ml-1">5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-text-secondary text-sm">October 15, 2025</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-text-secondary text-sm">4 min</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-primary-400 transition-colors">
+                            "EditKaro Transformed Our Brand Story" - TechFlow Solutions
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">
+                            Marcus Chen shares how our collaborative approach and platform-specific optimization strategies helped TechFlow achieve 340% growth in just 6 months.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">1.5K</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">98</span>
+                                </div>
+                            </div>
+                            <button class="text-primary-400 hover:text-primary-300 font-medium">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Additional Tutorial Article -->
+                <article class="blog-post bg-surface rounded-2xl overflow-hidden shadow-cinematic hover:shadow-glow transition-all duration-300 group" data-category="tutorials">
+                    <div class="aspect-video relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1634476229749-a2e480a919d0" 
+                             alt="Anime-style video editing workspace showing colorful animation timeline, character motion graphics, and special effects panels" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             onerror="this.src='https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">Tutorial</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="w-12 h-12 bg-accent/90 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-text-secondary text-sm">October 12, 2025</span>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span class="text-text-secondary text-sm">15 min</span>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-accent transition-colors">
+                            Creating Anime-Style Motion Graphics: Complete Guide
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">
+                            Master the art of anime-inspired video editing with dynamic transitions, vibrant color palettes, and character animation techniques that captivate audiences.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">3.2K</span>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    </svg>
+                                    <span class="text-text-secondary text-sm">245</span>
+                                </div>
+                            </div>
+                            <button class="text-accent hover:text-accent-400 font-medium">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="btn-secondary px-8 py-4">
+                    Load More Articles
+                    <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-background">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-gradient">Frequently Asked Questions</span>
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Get answers to common questions about video editing and our services
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-question w-full flex items-center justify-between text-left" data-faq="1">
+                        <h3 class="text-xl font-bold text-white">What video formats do you work with?</h3>
+                        <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-text-secondary">
+                        <p>We work with all major video formats including MP4, MOV, AVI, MKV, and more. Our team is experienced with footage from professional cameras, smartphones, screen recordings, and gaming captures. We can also work with raw footage formats like ProRes, RED, and BRAW for maximum quality retention.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-question w-full flex items-center justify-between text-left" data-faq="2">
+                        <h3 class="text-xl font-bold text-white">How do you optimize videos for different platforms?</h3>
+                        <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-text-secondary">
+                        <p>Each platform has unique requirements and audience behaviors. We optimize aspect ratios (16:9 for YouTube, 9:16 for TikTok, 1:1 for Instagram), adjust pacing for platform algorithms, include platform-specific elements like captions for TikTok, and ensure proper compression for fast loading while maintaining quality.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-question w-full flex items-center justify-between text-left" data-faq="3">
+                        <h3 class="text-xl font-bold text-white">What's your typical turnaround time?</h3>
+                        <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-text-secondary">
+                        <p>Our average turnaround time is 24-48 hours for standard projects. Complex projects like documentaries or multi-platform campaigns may take 3-7 days. Rush orders can be accommodated with our express service. We always provide realistic timelines during the initial consultation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-question w-full flex items-center justify-between text-left" data-faq="4">
+                        <h3 class="text-xl font-bold text-white">Do you provide revisions?</h3>
+                        <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-text-secondary">
+                        <p>Yes! All our packages include 2-3 rounds of revisions to ensure you're completely satisfied with the final result. We encourage detailed feedback and work collaboratively to achieve your vision. Additional revisions can be accommodated if needed.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-surface rounded-2xl p-6 shadow-cinematic">
+                    <button class="faq-question w-full flex items-center justify-between text-left" data-faq="5">
+                        <h3 class="text-xl font-bold text-white">Can you help with video marketing strategy?</h3>
+                        <svg class="faq-icon w-6 h-6 text-accent transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-text-secondary">
+                        <p>Absolutely! We're not just editors; we're strategic partners. We provide insights on content planning, platform-specific optimization, audience engagement strategies, and performance tracking. Our team stays current with algorithm changes and trending formats across all major platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="py-20 bg-gradient-to-r from-accent/10 via-background to-warning/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                <span class="text-gradient">Stay Ahead of the Curve</span>
+            </h2>
+            <p class="text-xl text-text-secondary mb-12 max-w-2xl mx-auto">
+                Join 5,000+ creators and marketers who get our weekly insights on video trends, editing techniques, and platform updates.
+            </p>
+
+            <!-- Newsletter Signup -->
+            <div class="max-w-md mx-auto mb-8">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" 
+                           placeholder="Enter your email" 
+                           class="flex-1 input-field">
+                    <button class="btn-primary whitespace-nowrap">
+                        Subscribe Now
+                    </button>
+                </div>
+                <p class="text-sm text-text-secondary mt-2">
+                    No spam, unsubscribe anytime. Get exclusive tutorials and industry insights.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="contact.html" class="btn-primary text-lg px-8 py-4">
+                    Start Your Project
+                    <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+                <a href="portfolio.html" class="btn-secondary text-lg px-8 py-4">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 border-t border-primary-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M4 6h24v4H4V6zm0 8h24v4H4v-4zm0 8h24v4H4v-4z"/>
+                            <circle cx="26" cy="8" r="2" fill="#FFB800"/>
+                            <circle cx="26" cy="16" r="2" fill="#00A8FF"/>
+                            <circle cx="26" cy="24" r="2" fill="#00D084"/>
+                        </svg>
+                        <span class="text-2xl font-bold text-gradient">EditKaro</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Transforming brands through the art of visual storytelling. We craft video experiences 
+                        that don't just capture attention—they create lasting connections.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center hover:bg-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="homepage.html" class="text-text-secondary hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="portfolio.html" class="text-text-secondary hover:text-accent transition-colors">Portfolio</a></li>
+                        <li><a href="services.html" class="text-text-secondary hover:text-accent transition-colors">Services</a></li>
+                        <li><a href="about.html" class="text-text-secondary hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="blog.html" class="text-text-secondary hover:text-accent transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-text-secondary hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-6">Services</h3>
+                    <ul class="space-y-4">
+                        <li><a href="services.html#ecommerce" class="text-text-secondary hover:text-accent transition-colors">eCommerce Ads</a></li>
+                        <li><a href="services.html#gaming" class="text-text-secondary hover:text-accent transition-colors">Gaming Content</a></li>
+                        <li><a href="services.html#anime" class="text-text-secondary hover:text-accent transition-colors">Anime Style</a></li>
+                        <li><a href="services.html#documentary" class="text-text-secondary hover:text-accent transition-colors">Documentary</a></li>
+                        <li><a href="services.html#social" class="text-text-secondary hover:text-accent transition-colors">Social Media</a></li>
+                        <li><a href="services.html#corporate" class="text-text-secondary hover:text-accent transition-colors">Corporate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-primary-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">
+                    © 2025 EditKaro. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-colors">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-colors">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Category Filter Functionality
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const blogPosts = document.querySelectorAll('.blog-post');
+
+        categoryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Update active filter
+                categoryFilters.forEach(f => {
+                    f.classList.remove('active', 'bg-accent', 'text-white');
+                    f.classList.add('bg-surface', 'text-text-secondary');
+                });
+                filter.classList.add('active', 'bg-accent', 'text-white');
+                filter.classList.remove('bg-surface', 'text-text-secondary');
+
+                // Filter posts
+                const category = filter.dataset.category;
+                blogPosts.forEach(post => {
+                    if (category === 'all' || post.dataset.category === category) {
+                        post.style.display = 'block';
+                        post.classList.add('animate-fade-in');
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('blog-search');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            blogPosts.forEach(post => {
+                const title = post.querySelector('h3').textContent.toLowerCase();
+                const content = post.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || content.includes(searchTerm)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        });
+
+        // FAQ Functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('.faq-icon');
+
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Load More Functionality
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        let articlesLoaded = 6;
+        const totalArticles = 12; // Simulated total
+
+        loadMoreBtn.addEventListener('click', () => {
+            // Simulate loading more articles
+            articlesLoaded += 3;
+            
+            if (articlesLoaded >= totalArticles) {
+                loadMoreBtn.style.display = 'none';
+            }
+            
+            // Add loading animation
+            loadMoreBtn.innerHTML = 'Loading...';
+            setTimeout(() => {
+                loadMoreBtn.innerHTML = 'Load More Articles <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>';
+            }, 1000);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-background/95');
+                nav.classList.remove('bg-background/90');
+            } else {
+                nav.classList.add('bg-background/90');
+                nav.classList.remove('bg-background/95');
+            }
+        });
+
+        // Newsletter subscription
+        const subscribeButtons = document.querySelectorAll('button:contains("Subscribe")');
+        subscribeButtons.forEach(btn => {
+            if (btn.textContent.includes('Subscribe')) {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const emailInput = btn.parentElement.querySelector('input[type="email"]');
+                    if (emailInput && emailInput.value) {
+                        btn.textContent = 'Subscribed!';
+                        btn.classList.add('bg-success');
+                        setTimeout(() => {
+                            btn.textContent = 'Subscribe';
+                            btn.classList.remove('bg-success');
+                        }, 2000);
+                    }
+                });
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
